@@ -88,8 +88,6 @@ label {
     border-radius: 3px;
     position: relative;
     display: block;
-    justify-content: space-around;
-    align-items: center;
     margin: 0 auto;
     max-width: 360px;  /* ボタンの最大幅を広げる */
     padding: 20px 40px; /* ボタンの内側余白を大きく */
@@ -115,8 +113,6 @@ label {
     border-radius: 3px;
     position: relative;
     display: block;
-    justify-content: space-around;
-    align-items: center;
     margin: 0 auto;
     max-width: 360px;  /* ボタンの最大幅を広げる */
     padding: 20px 40px; /* ボタンの内側余白を大きく */
@@ -141,8 +137,6 @@ label {
     border-radius: 3px;
     position: relative;
     display: block;
-    justify-content: space-around;
-    align-items: center;
     margin: 0 auto;
     max-width: 360px;  /* ボタンの最大幅を広げる */
     padding: 20px 40px; /* ボタンの内側余白を大きく */
