@@ -1,0 +1,182 @@
+/* Google Fontsを使用する場合は、headに追加が必要 */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+body {
+    font-family: 'Baloo 2', cursive, sans-serif;
+    background: #fef9f4;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1,h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(255, 107, 107, 0.3);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    animation: popIn 0.6s ease-out;
+}
+
+#title-screen {
+  padding: 30px;
+}
+
+#quiz-container {
+  padding: 20px;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+form p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #444;
+}
+
+label {
+  display: block;
+  padding: 6px 0;
+  margin-left: 20px;
+}
+
+.question-block {
+    background-color: #ffeaa7;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    font-size: 1.2rem;}
+
+.unanswered {
+    border: 2px solid red;
+}
+
+.choices label {
+      display: block;
+      margin: 5px 0;
+}
+
+.correct {
+    color: red;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: blue;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.start-button {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 360px;  /* ボタンの最大幅を広げる */
+    padding: 20px 40px; /* ボタンの内側余白を大きく */
+    font-size: 1.2em;  /* フォントサイズを大きく */
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background: #313131;
+    color: #FFF;
+}
+
+.start-button:hover::after {
+    border-color: #FFF;
+}
+
+
+.mark-button {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 360px;  /* ボタンの最大幅を広げる */
+    padding: 20px 40px; /* ボタンの内側余白を大きく */
+    font-size: 1.2em;  /* フォントサイズを大きく */
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mark-button:hover {
+    background: #313131;
+    color: #FFF;
+}
+
+.mark-button:hover::after {
+    border-color: #FFF;
+}
+
+.retry-button {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 360px;  /* ボタンの最大幅を広げる */
+    padding: 20px 40px; /* ボタンの内側余白を大きく */
+    font-size: 1.2em;  /* フォントサイズを大きく */
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.retry-button:hover {
+    background: #313131;
+    color: #FFF;
+}
+
+.retry-button:hover::after {
+    border-color: #FFF;
+}
+
+/* 結果表示 */
+.result {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/*[h1]アニメーション設定*/
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

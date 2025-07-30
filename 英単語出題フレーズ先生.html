@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>英単語出題フレーズ先生</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--タイトル画面-->
+  <div id="title-screen">
+    <h1>英単語出題フレーズ先生</h1>
+    <label for="question-count">出題数：</label>
+    <select id="question-count">
+     <option value="5">5問</option>
+     <option value="10" selected>10問</option>
+     <option value="12">全問</option>
+     </select>
+    <button id="start-button" class ="start-button" >スタート</button>
+  </div>
+
+  <!--問題表示画面-->
+  <div id="quiz-container" style="display:none;">
+    <h1>Question</h1>
+    <form id="quizForm"></form>
+    <div style="text-align:center">
+      <button class="mark-button" onclick="gradeQuiz()">採点する</button>
+    </div>
+  </div>
+  <div class="result" id="result"></div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
