@@ -123,5 +123,5 @@ function retryQuiz() {
   const form = document.getElementById("quizForm");
   form.style.display = "block";
   const markButton = document.querySelector(".mark-button");
-  if (markButton) markButton.style.display = "flex";
+  if (markButton) markButton.style.display = "block";
 }
