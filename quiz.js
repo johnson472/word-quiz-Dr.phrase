@@ -118,7 +118,7 @@ function retryQuiz() {
   document.getElementById("result").innerHTML = "";
 
   const startButton = document.getElementById("start-button");
-  if (startButton) startButton.style.display = "inline-block";
+  if (startButton) startButton.style.display = "block";
 
   const form = document.getElementById("quizForm");
   form.style.display = "block";
