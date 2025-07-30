@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizContainer = document.getElementById("quiz-container");
   const startButton = document.getElementById("start-button");
   const form = document.getElementById("quizForm");
-  const gradeButton = document.getElementById("grade-button");
-
+  const markButton = document.getElementById("mark-button");
+  markButton.addEventListener("click", gradeQuiz);
+  
   // JSONファイルから単語リストを取得
   fetch("words.json")
     .then(res => res.json())
